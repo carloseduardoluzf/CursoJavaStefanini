@@ -1,6 +1,8 @@
 package com.stefanini.aula8.executor;
 
 import com.stefanini.aula8.Carro;
+import com.stefanini.aula8.Mercedes;
+import com.stefanini.aula8.entidade.BMW;
 
 public class Executor {
 	
@@ -20,17 +22,32 @@ public class Executor {
 		System.out.println(carro1.getBancos());
 		
 		
-		System.out.println(carro1.getVelocidade());
-		carro1.acelerar();
+		System.out.println(carro1.acelerar());
 		
+		Carro carro2 = new Carro("Mercedes");
+		System.out.println(carro2.getMarca());
 		
+		System.out.println(soma(10, 5));
+		System.out.println(soma(10, 5, 6));
 		
+		BMW bmw = new BMW();
+		bmw.setVelocidade(100);
+		System.out.println(bmw.acelerar());
 		
-		
-		
+		Mercedes mercedes = new Mercedes();
+		System.out.println(mercedes.acelerar());
 	}
 	
 	
+		public static int soma(int a, int b) {
+			return a + b;
+		
+		}
+		
+		public static int soma(int a, int b, int c) {
+			return a + b + c;
+		}
+		
 	
 	
 }

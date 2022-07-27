@@ -10,6 +10,16 @@ public class Carro {
 	private int bancos;
 	private int velocidade; 
 	
+	
+	public Carro() {
+		System.out.println("Construindo um carro!");
+	}
+	
+	
+	public Carro(String marca) {
+		this.marca = marca;
+	}
+	
 	public String acelerar() {
 		return velocidade + "km/5s";
 		
